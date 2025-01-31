@@ -2,6 +2,7 @@ public class HelloWorld {
     public static void main(String[] args) {
         System.out.println(" Hello, Java! ");
         System.out.println(" Java is cool! ");
+        System.out.println("Hi");
 
         int a = 10;
         int b = 20;
@@ -15,7 +16,7 @@ public class HelloWorld {
         int additionResult = num + num2;
         int subtractionResult = num - num2;
         int multiplicationResult = num * num2;
-        int divisionResult = num / num2;
+        int divisionResult = num % num2;
         System.out.println(" addition " + num + " + " + num2 + " = " + additionResult);
         System.out.println(" subtraction" + num + " - " + num2 + " = " + subtractionResult);
         System.out.println(" multiplication " + num + " * " + num2 + " = " + multiplicationResult);
