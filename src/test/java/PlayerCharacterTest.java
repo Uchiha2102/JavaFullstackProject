@@ -12,7 +12,7 @@ class PlayerCharacterTest {
 
 
     @Test
-    void getZeroWhenStart() {
+    void getXZeroWhenStart() {
         //Given
         int expected = 0;
         //When
@@ -20,6 +20,14 @@ class PlayerCharacterTest {
         //Then
         assertEquals(expected, actual);
     }
-
+    @Test
+    void getYZeroWhenStart() {
+        //Given
+        int expected = 0;
+        //When
+        int actual = PlayerCharacter.getY();
+        //Then
+        assertEquals(expected, actual);
+    }
 
 }
