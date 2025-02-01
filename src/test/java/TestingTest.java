@@ -30,11 +30,11 @@ class TestingTest {
 
         }
     @Test
-    void testHelloWorld(){
-        String a = "hello";
-        String excepted = "Hello";
+    void testhelloWorld(){
+        String a = "Hello";
+        String expected = "HELLO";
         String result = Testing.helloWorld(a);
-        assertEquals(excepted,result);
+        assertEquals(expected,result);
     }
     @Test
     void testPositiveNumber(){
