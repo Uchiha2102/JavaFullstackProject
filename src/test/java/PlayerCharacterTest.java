@@ -35,7 +35,18 @@ int actual = PlayerCharacter.getX();
     }
 
     @Test
-    void
-
+    void return1_WhenPressW() {
+        String direction = "w";
+    int expected = 1;
+    int actual = PlayerCharacter.move(direction);
+        assertEquals(expected,actual);
+    }
+    @Test
+    void returnMinus1_WhenPressS(){
+        String direction = "s";
+        int expected =-1;
+        int actual = PlayerCharacter.move(direction);
+        assertEquals(expected,actual);
+    }
 
 }

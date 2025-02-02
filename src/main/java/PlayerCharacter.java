@@ -7,8 +7,19 @@ public class PlayerCharacter {
     public static int getX() {
         return x;
     }
+
     public static int getY() {
         return y;
     }
 
+    public static int move(String direction) {
+        if (direction.equals("w")){
+            y++;
+            return getY();
+        } else if (direction.equals("s")) {
+            y--;
+            return getY();
+        }
+        return 42;
+    }
 }
