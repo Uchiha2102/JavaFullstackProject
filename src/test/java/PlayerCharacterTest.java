@@ -1,33 +1,41 @@
-import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class PlayerCharacterTest {
+public class PlayerCharacterTest {
 
-    void resetAllXY() {
-        PlayerCharacter.x =0;
-        PlayerCharacter.y =1;
+
+    @BeforeEach
+    void resetXY(){
+        PlayerCharacter.x = 0;
+        PlayerCharacter.y = 0;
     }
 
 
     @Test
-    void getXZeroWhenStart() {
-        //Given
-        int expected = 0;
+    void X_return0WhenStart() {
+        // Given
+        int excepted =  0;
         //When
-        int actual = PlayerCharacter.getX();
+int actual = PlayerCharacter.getX();
         //Then
-        assertEquals(expected, actual);
+        assertEquals(excepted,actual);
     }
+
     @Test
-    void getYZeroWhenStart() {
+    void Y_return0WhenStart()
+    {
         //Given
-        int expected = 0;
-        //When
+        int excepted = 0;
+        // When
         int actual = PlayerCharacter.getY();
-        //Then
-        assertEquals(expected, actual);
+        // Then
+        assertEquals(excepted,actual);
     }
+
+    @Test
+    void
+
 
 }
